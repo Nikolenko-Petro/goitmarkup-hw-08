@@ -1,0 +1,33 @@
+.join {
+  margin-left: 70px;
+}
+.join__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+
+.join__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.join__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--light-text-color);
+  margin: 12px 12px;
+}

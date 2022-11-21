@@ -1,0 +1,21 @@
+/* колір основного тексту #21212 */
+/* другорядний колір тексту* #757575 */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* другорядний фон #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --light-text-color: #ffffff;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-icon-color: #afb1b8;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

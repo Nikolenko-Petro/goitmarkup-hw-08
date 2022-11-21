@@ -1,0 +1,60 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team__list {
+  display: flex;
+  gap: 30px;
+}
+.team__card {
+  width: 270px;
+  height: 428px;
+  background-color: var(--light-text-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team__foto {
+  display: block;
+}
+.team__name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-network__list {
+  margin-top: 16px;
+}
+.team-network__link {
+  display: flex;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  color: var(--primary-icon-color);
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.team-network__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: currentColor 250s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,27 @@
+//Base Styles
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/reset";
+@import "./base/common";
+
+// Utils Styles
+@import "./utils/variables";
+// Components Styles
+@import "./components/conteiner";
+@import "./components/heder";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/button";
+@import "./components/hero";
+@import "./components/feature";
+@import "./components/examples";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/footer-information";
+@import "./components/join";
+@import "./components/connect";
+@import "./components/filters";
+@import "./components/project";
+@import "./components/modal";
+@import "./components/modal-form";

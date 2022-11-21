@@ -1,0 +1,25 @@
+.examples__list {
+  display: flex;
+  gap: 30px;
+}
+.examples__item {
+  position: relative;
+}
+.examples__img {
+  display: block;
+}
+.examples__wraper {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  text-align: center;
+}
+.examples__text {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: var(--light-text-color);
+  margin-top: 27px;
+  text-transform: uppercase;
+}
