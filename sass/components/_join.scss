@@ -1,5 +1,8 @@
 .join {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 .join__title {
   text-transform: uppercase;
@@ -8,6 +11,9 @@
   line-height: 16px;
   color: var(--light-text-color);
   margin-bottom: 20px;
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
 }
 
 .join__link {
