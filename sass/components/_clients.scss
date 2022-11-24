@@ -9,6 +9,7 @@
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .clients-link {
@@ -16,7 +17,7 @@
   display: flex;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -25,6 +26,16 @@
   &:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      width: 226px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 170px;
+    }
   }
 }
 

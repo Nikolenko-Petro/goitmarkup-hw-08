@@ -3,10 +3,13 @@
 }
 
 .site-nav {
-  margin-left: 93px;
-  display: flex;
-  gap: 50px;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
 }
 
 .site-nav__link {
@@ -23,6 +26,10 @@
     color: var(--accent-color);
   }
 }
+.active {
+  color: var(--accent-color);
+}
+
 .site-nav__link.active::after {
   content: "";
   display: block;
@@ -35,13 +42,20 @@
   font-size: 10px;
   line-height: 10px;
 }
-.active {
-  color: var(--accent-color);
-}
+
 .connection-nav {
-  margin-left: auto;
-  display: flex;
-  gap: 50px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .link {

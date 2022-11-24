@@ -3,7 +3,11 @@
   align-items: center;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #ececec;
+  }
 }

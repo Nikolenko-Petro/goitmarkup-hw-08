@@ -56,6 +56,12 @@
 
 .feature__title {
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767.98px) {
+    & {
+      text-align: center;
+    }
+  }
 }
 
 .feature__text {

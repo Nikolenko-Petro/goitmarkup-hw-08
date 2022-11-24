@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner header-section">
         <nav class="header-nav">
           <a class="logo" href="./">
@@ -56,11 +56,20 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="24" height="24 ">
+            <use href="./symbol-defs.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main class="main"> -->
-    <!-- HERO -->
-    <!-- 
+    <main class="main">
+      <!-- HERO -->
+
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -68,117 +77,142 @@
             Замовити послугу
           </button>
         </div>
-      </section> -->
-    <!-- Feature -->
-    <section class="feature section">
-      <div class="conteiner">
-        <ul class="feature__list">
-          <li class="feature__item">
-            <div class="feature__wrapper">
-              <svg class="feature__icon">
-                <use href="./symbol-defs.svg#icon-antena"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="feature__text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="feature__item">
-            <div class="feature__wrapper">
-              <svg class="feature__icon">
-                <use href="./symbol-defs.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="feature__text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="feature__item">
-            <div class="feature__wrapper">
-              <svg class="feature__icon">
-                <use href="./symbol-defs.svg#icon-clock"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title">ПЛАНУВАННЯ</h3>
-            <p class="feature__text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="feature__item">
-            <div class="feature__wrapper">
-              <svg class="feature__icon">
-                <use href="./symbol-defs.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="feature__text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <!--  Examples -->
+      <!-- Feature -->
 
-    <!-- <section class="examples section">
-      <div class="conteiner">
-        <h2 class="main__title">Чим ми займаємося</h2>
-        <ul class="examples__list">
-          <li class="examples__item">
-            <img
-              class="examples__img"
-              src="./images/box1.jpg"
-              alt="box1"
-              width="370"
-            />
-            <div class="examples__wraper">
-              <p class="examples__text">десктопні додатки</p>
-            </div>
-          </li>
-          <li class="examples__item">
-            <img
-              class="examples__img"
-              src="./images/box2.jpg"
-              alt="box2"
-              width="370"
-            />
-            <div class="examples__wraper">
-              <p class="examples__text">Мобільні додатки</p>
-            </div>
-          </li>
-          <li class="examples__item">
-            <img
-              class="examples__img"
-              src="./images/box3.jpg"
-              alt="box3"
-              width="370"
-            />
-            <div class="examples__wraper">
-              <p class="examples__text">Дизайнерські рішення</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-    <!-- TEAM -->
-    <!-- <section class="team section">
+      <section class="feature section">
+        <div class="conteiner">
+          <ul class="feature__list">
+            <li class="feature__item">
+              <div class="feature__wrapper">
+                <svg class="feature__icon">
+                  <use href="./symbol-defs.svg#icon-antena"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="feature__item">
+              <div class="feature__wrapper">
+                <svg class="feature__icon">
+                  <use href="./symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="feature__item">
+              <div class="feature__wrapper">
+                <svg class="feature__icon">
+                  <use href="./symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
+              <p class="feature__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="feature__item">
+              <div class="feature__wrapper">
+                <svg class="feature__icon">
+                  <use href="./symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--  Examples -->
+
+      <section class="examples section">
+        <div class="conteiner">
+          <h2 class="main__title">Чим ми займаємося</h2>
+          <ul class="examples__list">
+            <li class="examples__item">
+              <img
+                class="examples__img"
+                src="./images/box1.jpg"
+                alt="box1"
+                width="370"
+              />
+              <div class="examples__wraper">
+                <p class="examples__text">десктопні додатки</p>
+              </div>
+            </li>
+            <li class="examples__item">
+              <img
+                class="examples__img"
+                src="./images/box2.jpg"
+                alt="box2"
+                width="370"
+              />
+              <div class="examples__wraper">
+                <p class="examples__text">Мобільні додатки</p>
+              </div>
+            </li>
+            <li class="examples__item">
+              <img
+                class="examples__img"
+                src="./images/box3.jpg"
+                alt="box3"
+                width="370"
+              />
+              <div class="examples__wraper">
+                <p class="examples__text">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+
+      <section class="team section">
         <div class="conteiner">
           <h2 class="main__title team-title">Наша команда</h2>
           <ul class="team__list">
             <li>
               <div class="team__card">
-                <img
-                  class="team__foto"
-                  src="./images/img.jpg"
-                  alt="tc1"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Team/team_1_desk.jpg   1x,
+                      ./images/Team/team_1_desk@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_1_tablet.jpg   1x,
+                      ./images/Team/team_1_tablet@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_1_mob.jpg   1x,
+                      ./images/Team/team_1_mob@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/Team/team_1_desk.jpg" alt="tc1" />
+                </picture>
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="network-list team-network__list">
@@ -215,12 +249,33 @@
             </li>
             <li>
               <div class="team__card">
-                <img
-                  class="team__foto"
-                  src="./images/img(1).jpg"
-                  alt="tc2"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Team/team_2_desk.jpg   1x,
+                      ./images/Team/team_2_desk@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_2_tablet.jpg   1x,
+                      ./images/Team/team_2_tablet@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_2_mob.jpg   1x,
+                      ./images/Team/team_2_mob@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/Team/team_2_desk.jpg" alt="tc1" />
+                </picture>
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="network-list team-network__list">
@@ -257,12 +312,33 @@
             </li>
             <li>
               <div class="team__card">
-                <img
-                  class="team__foto"
-                  src="./images/img(2).jpg"
-                  alt="tc3"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Team/team_3_desk.jpg   1x,
+                      ./images/Team/team_3_desk@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_3_tablet.jpg   1x,
+                      ./images/Team/team_3_tablet@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_3_mob.jpg   1x,
+                      ./images/Team/team_3_mob@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/Team/team_3_desk.jpg" alt="tc1" />
+                </picture>
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="network-list team-network__list">
@@ -299,7 +375,33 @@
             </li>
             <li>
               <div class="team__card">
-                <img src="./images/img(3).jpg" alt="tc4" width="270" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Team/team_4_desk.jpg   1x,
+                      ./images/Team/team_4_desk@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_4_tablet.jpg   1x,
+                      ./images/Team/team_4_tablet@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Team/team_4_mob.jpg   1x,
+                      ./images/Team/team_4_mob@2.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/Team/team_4_desk.jpg" alt="tc1" />
+                </picture>
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="network-list team-network__list">
@@ -336,11 +438,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- CLIENTS -->
+      <!-- CLIENTS -->
 
-    <!-- <section class="section">
+      <section class="section">
         <div class="conteiner">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -389,7 +491,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- FOOTER -->
     <!-- <footer class="footer">
       <div class="conteiner footer-conteiner">
@@ -471,7 +573,7 @@
 
     <!-- MODAL  -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-logo">
@@ -528,7 +630,61 @@
         </form>
       </div>
     </div>
-  -->
+
+    <!-- Mobile-menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="24" height="24 ">
+          <use href="./symbol-defs.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link accent">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+38 096 111 11 11" class="mobile-comtacts__link current"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-comtacts__link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./JS/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/mobile_menu.js"></script>
   </body>
 </html>

@@ -1,13 +1,18 @@
+.examples {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .examples__list {
   display: flex;
   gap: 30px;
 }
+
 .examples__item {
   position: relative;
 }
-.examples__img {
-  display: block;
-}
+
 .examples__wraper {
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
