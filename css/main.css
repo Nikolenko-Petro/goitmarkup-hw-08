@@ -268,6 +268,9 @@ html {
 .header-section {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 
 .header {
@@ -334,6 +337,7 @@ html {
 
 .site-nav__link {
   color: var(--primary-text-color);
+  padding: 41px 2px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -344,6 +348,11 @@ html {
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link {
+    padding: 32px 2px;
+  }
 }
 
 .active {
@@ -358,7 +367,7 @@ html {
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
-  margin-top: 28px;
+  bottom: 0;
   font-size: 10px;
   line-height: 10px;
 }
@@ -755,6 +764,7 @@ html {
 @media screen and (min-width: 768px) {
   .footer-infirmation {
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -965,17 +975,21 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.project__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 765px) {
   .project__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .project__item {
     width: 370px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 764px) {
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1060,8 +1074,8 @@ html {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -1070,6 +1084,12 @@ html {
   border-radius: 4px;
   transition: transform 250ms linear;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-btn {
@@ -1122,8 +1142,10 @@ html {
 .form__label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
   position: relative;
+}
+.form__label:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .form__input {
@@ -1170,6 +1192,7 @@ html {
 }
 
 .label-checkbox {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1202,16 +1225,26 @@ html {
 
 .contract-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.7;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .contract-text {
+    font-size: 14px;
+  }
 }
 
 .contract {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.7;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contract {
+    font-size: 14px;
+  }
 }
 .contract:focus-visible {
   outline: 1px solid var(--accent-color);
