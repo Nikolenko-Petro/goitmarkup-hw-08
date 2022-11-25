@@ -287,8 +287,14 @@ html {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .colorlogo {
@@ -300,8 +306,14 @@ html {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header-nav {
@@ -675,6 +687,11 @@ html {
   flex-wrap: wrap;
 }
 
+.client-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .clients-link {
   color: var(--primary-icon-color);
   display: flex;
@@ -934,13 +951,32 @@ html {
 
 .project__list {
   margin-top: 34px;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .project__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .project__item {
-  width: 370px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 765px) {
+  .project__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: 370px;
+  }
 }
 
 .project__link {

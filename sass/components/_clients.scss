@@ -11,7 +11,10 @@
   margin-top: 50px;
   flex-wrap: wrap;
 }
-
+.client-item {
+  margin-left: auto;
+  margin-right: auto;
+}
 .clients-link {
   color: var(--primary-icon-color);
   display: flex;
